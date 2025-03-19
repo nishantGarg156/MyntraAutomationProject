@@ -12,13 +12,14 @@ public class EndToEndTest extends BasePage {
 
     @Test
     public void verifyProductsAddedToCart() {
-        getDriver().get("https://www.myntra.com/");
+        getDriver().get("https://www.flipkart.com/");
         homePage = new HomePage(getDriver());
         productPage = new ProductPage(getDriver());
         bagPage = new BagPage(getDriver());
         homePage.serachForProduct("Nike Shoes");
         homePage.selectFirstProducts();
-        productPage.selectSize();
+        productPage.selectColour("Aqua");
+        productPage.selectSize("M");
         productPage.addToBag();
         Assert.assertEquals(bagPage.bagItemCount(), 1, "Expected 1 item in the cart!");
     }

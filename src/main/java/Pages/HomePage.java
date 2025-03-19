@@ -12,9 +12,9 @@ import java.util.Set;
 public class HomePage {
     WebDriver driver;
     WebDriverWait wait;
-    private By serachBar = By.xpath("//input[@placeholder='Search for products, brands and more']");
-    private By products = By.xpath("//li[@class='product-base']");
-    //  private By serachBarButton = By.xpath("//a[@class='desktop-submit']");
+    private By serachBar = By.xpath("//input[@placeholder='Search for Products, Brands and More']");
+    private By products = By.xpath("//div[@class='gqcSqV YGE0gZ']");
+
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

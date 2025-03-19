@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class BagPage {
     WebDriver driver;
 
-    private By cartItems = By.cssSelector(".itemContainer-base-item");
+    private By cartItems = By.xpath("//div[@class='eGXlor pk3Guc']");
 
     public BagPage(WebDriver driver) {
         this.driver = driver;
